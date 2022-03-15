@@ -13,7 +13,7 @@ public class Loops {
          * }
          */
         System.out.println("### starting While Loop ######");
-        while(i <= 10){
+        while (i <= 10) {
             System.out.println(i);
             i++;
         }
@@ -31,10 +31,10 @@ public class Loops {
          *
          */
         System.out.println("### starting do-while Loop ######");
-        do{
+        do {
             System.out.println(i);
             i++;
-        }while(i <= 20);
+        } while (i <= 20);
 
         /**
          *
@@ -48,17 +48,31 @@ public class Loops {
          */
 
         System.out.println("### starting for Loop ######");
-        for(int y = 1; y<=10; y++)
+        for (int y = 1; y <= 10; y++)
             System.out.println(y);
 
-        for(;i<=30;i++)
+        for (; i <= 30; i++)
             System.out.println(i);
 
 
-        for(int y = 1 ; y <=5 ; y++ ){
-            for (int j=1; j<=y;j++)
+        for (int y = 1; y <= 5; y++) {
+            for (int j = 1; j <= y; j++)
                 System.out.print("*");
             System.out.println("");
+        }
+
+        /**
+         * Control statements
+         *  1. continue
+         *  2. break
+         */
+        System.out.println("Printing odd numbers");
+        for (int j = 0; ; j++) {
+            if (j % 2 == 0)
+                continue;
+            if (j >= 30)
+                break;
+            System.out.println(j);
         }
 
     }
